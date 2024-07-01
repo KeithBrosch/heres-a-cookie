@@ -21,9 +21,9 @@ client.on('interactionCreate', (interaction) => {
     const recipient = interaction.options.get('recipient')?.value;
     
     
-    // interaction.reply(`The sum is ${num1 + num2}`);
+    interaction.reply(`<@${recipient}> Here's a cookie 🍪`);
     
-    console.log(recipient);
+    // console.log(recipient);
   };
 
 });
