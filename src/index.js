@@ -18,10 +18,8 @@ client.on('interactionCreate', (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
   if (interaction.commandName === 'give-a-cookie') {
-    const recipient = interaction.options.get('recipient')?.value;
-    
-    console.log(recipient);
-    // interaction.reply(`The sum is ${num1 + num2}`);
+    const recipient = interaction.options.get('recipient');
+    interaction.reply(`<@${recipient.user.id}> here's a cookie 🍪`)
   };
 
 });
